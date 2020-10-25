@@ -1,0 +1,23 @@
+.friends {
+	overflow-y: scroll;
+	border: 1px solid black;
+	height: 800px;
+}
+
+.friends {
+  scrollbar-width: thin;
+  scrollbar-color: black rgb(71,73,71);
+}
+
+/* Works on Chrome/Edge/Safari */
+.friends::-webkit-scrollbar {
+  width: 10px;
+}
+.friends::-webkit-scrollbar-track {
+  background: rgb(71,73,71);
+}
+.friends::-webkit-scrollbar-thumb {
+  background-color: black;
+  /*border-radius: 20px;*/
+  /*border: 3px solid #A9A9A9;*/
+}
