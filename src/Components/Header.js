@@ -9,7 +9,7 @@ class Header extends Component {
 	render() {
 		console.log("Header")
 		return (
-			<h1 className='f1'>RoboFriends</h1>
+			<h1 style = {{fontSize: "2.75rem"}}>RoboFriends</h1>
 			)
 	}
 	
