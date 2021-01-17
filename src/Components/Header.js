@@ -7,7 +7,6 @@ class Header extends Component {
 	}
 
 	render() {
-		console.log("Header")
 		return (
 			<h1 style = {{fontSize: "2.75rem"}}>RoboFriends</h1>
 			)
