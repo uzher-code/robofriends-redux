@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import CounterButton from './CounterButton';
 
 
 class Header extends Component {
@@ -8,7 +9,10 @@ class Header extends Component {
 
 	render() {
 		return (
-			<h1 style = {{fontSize: "2.75rem"}}>RoboFriends</h1>
+			<div>
+				<h1 style = {{fontSize: "2.75rem"}}>RoboFriends</h1>
+				<CounterButton color={'red'} />
+			</div>
 			)
 	}
 	
