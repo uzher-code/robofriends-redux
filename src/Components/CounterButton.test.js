@@ -9,7 +9,7 @@ it('expect to render CounterButton component correctly', () => {
 })
 
 it('correctly increments the counter', () => {
-	const mockColor = 'red';
+	// const mockColor = 'red';
 	const wrapper = shallow(<CounterButton />)
 
 	expect.assertions(4);
