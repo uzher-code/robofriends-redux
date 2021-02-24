@@ -14,8 +14,8 @@ jobs:
     steps:
       - checkout
       - run: echo "running tests"
-      - run: npm install
-      - run: npm test
+      - run: npm install --dev
+      - run: npm test 
 workflows:
   version: 2.1
   bobby_sally:
