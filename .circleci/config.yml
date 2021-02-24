@@ -11,10 +11,10 @@ jobs:
       - image: circleci/node:14.10.1
     steps:
       - checkut
-      - run: echo "A first hello"
-  workflows:
-    version: 2.1
-    bobby_sally:
-      jobs:
-        - bobby
-        - sally
+      - run: echo "Double Trouble"
+workflows:
+  version: 2.1
+  bobby_sally:
+    jobs:
+      - bobby
+      - sally
