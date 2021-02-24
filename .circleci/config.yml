@@ -4,17 +4,18 @@ jobs:
     docker:
       - image: circleci/node:14.10.1
     steps:
-      - checkut
+      - checkout
       - run: echo "A first hello"
   sally:
     docker:
       - image: circleci/node:14.10.1
     steps:
-      - checkut
-      - run: echo "A first hello"
-  workflows:
-    version: 2.1
-    bobby_sally:
-      jobs:
-        - bobby
-        - sally
+      - checkout
+      - run: echo "Double trouble"
+workflows:
+  version: 2.1
+  bobby_sally:
+    jobs:
+      - bobby
+      - sally
+
