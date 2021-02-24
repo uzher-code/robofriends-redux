@@ -1,20 +1,24 @@
 version: 2.1
 jobs:
-  bobby:
+  build:
     docker:
       - image: circleci/node:14.10.1
     steps:
-      - checkut
-      - run: echo "A first hello"
-  sally:
+      - checkout
+      - run: echo "npm installing"
+      - run: npm install
+      - run: CI=true npm run build
+  test:
     docker:
       - image: circleci/node:14.10.1
     steps:
-      - checkut
-      - run: echo "Double Trouble"
+      - checkout
+      - run: echo "running tests"
+      - run: npm install
+      - run: npm test
 workflows:
   version: 2.1
-  bobby_sally:
+  build_test_and_lint:
     jobs:
-      - bobby
-      - sally
+      - build
+      - test
