@@ -15,7 +15,7 @@ jobs:
       - checkout
       - run: echo "running tests"
       - run: npm install --dev
-      - run: npm test 
+      - run: npm run test 
 workflows:
   version: 2.1
   build-test-and-lint:
