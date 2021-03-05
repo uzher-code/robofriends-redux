@@ -4,8 +4,9 @@ import {
 	REQUEST_ROBOTS_SUCCESS,
 	REQUEST_ROBOTS_FAIL
 } from './constants';
+import fetchMock from 'fetch-mock';
 import * as actions from './actions';
-import fetchMock from 'fetch-Mock';
+
 
 import configureMockStore from 'redux-mock-store';
 import thunkMiddleware from 'redux-thunk';
